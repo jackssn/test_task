@@ -43,7 +43,7 @@ def add_CR_and_CTR_to_df(df_raw):
 if __name__ == "__main__":
     df = pd.read_csv('dataset_Facebook.csv', delimiter=';')
     labels = df.columns
-    content_types = ['Photo', 'Status,' 'Link', 'Video']  # ['Photo', 'Status,' 'Link', 'Video'] or [] for use all
+    content_types = ['Photo', 'Status', 'Link', 'Video']  # ['Photo', 'Status,' 'Link', 'Video'] or [] for use all
 
     # Statistical description of the array. Optional: content_types.
     stat_df = get_df_with_stat_info(df, content_types)
